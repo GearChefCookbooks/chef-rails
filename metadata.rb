@@ -1,6 +1,6 @@
 name             'docker-chef-rails'
-maintainer       'Austen Ito'
-maintainer_email 'austen.dev@gmail.com'
+maintainer       'Gary Leong'
+maintainer_email 'gwleong@gmail.com'
 license          'MIT License'
 description      'example cookbook used to provision example docker containers'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
