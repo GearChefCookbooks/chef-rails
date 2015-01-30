@@ -4,7 +4,7 @@
 #
 
 
-include_recipe 'docker'
+#include_recipe 'docker'
 
 #remote_directory '/tmp/postgres' do
 #  source 'postgres'

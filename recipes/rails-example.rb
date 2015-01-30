@@ -3,7 +3,7 @@
 # Recipe:: rails-example
 #
 
-include_recipe 'docker'
+#include_recipe 'docker'
 
 #remote_directory '/tmp/rails-example' do
 #  source 'rails-example'

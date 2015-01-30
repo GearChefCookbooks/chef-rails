@@ -3,7 +3,7 @@
 # Recipe::nginx-run
 #
 
-include_recipe 'docker'
+#include_recipe 'docker'
 
 #remote_directory '/tmp/nginx' do
 #  source 'nginx'
