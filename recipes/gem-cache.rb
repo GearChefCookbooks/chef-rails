@@ -3,7 +3,7 @@
 # Recipe:: gem-cache
 #
 
-include_recipe 'docker'
+#include_recipe 'docker'
 
 #cookbook_file 'Dockerfile' do
 #  path '/tmp/Dockerfile'
@@ -12,7 +12,7 @@ include_recipe 'docker'
 
 docker_image 'ubuntu' do
   tag 'gem-cache'
-  source '/tmp'
+  source '/tmp/gem-cache'
   action :build_if_missing
 end
 
