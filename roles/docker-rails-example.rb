@@ -2,7 +2,9 @@ name "docker-rails-example"
 description "docker-rails-example"
 default_attributes(
    :docker => {
-        :storage_driver => "devicemapper"
+        :storage_driver => "devicemapper",
+        :image_cmd_timeout => 600,
+        :container_cmd_timeout => 600
         },
    :postgresql => {
         :user => "postgres",

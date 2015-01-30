@@ -11,7 +11,12 @@
 #end
 
 docker_image 'ubuntu' do
+  action :pull
+  retries 0
+  retry_delay 2
   tag 'gem-cache'
+  #cmd_timeout 5
+  #image_cmd_timeout
   source '/tmp/gem-cache'
   action :build_if_missing
 end
