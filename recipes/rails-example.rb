@@ -5,9 +5,9 @@
 
 include_recipe 'docker'
 
-remote_directory '/tmp/rails-example' do
-  source 'rails-example'
-end
+#remote_directory '/tmp/rails-example' do
+#  source 'rails-example'
+#end
 
 docker_image 'austenito/rails-example' do
   source '/tmp/rails-example'

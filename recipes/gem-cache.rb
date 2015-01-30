@@ -5,10 +5,10 @@
 
 include_recipe 'docker'
 
-cookbook_file 'Dockerfile' do
-  path '/tmp/Dockerfile'
-  source 'gem-cache/Dockerfile'
-end
+#cookbook_file 'Dockerfile' do
+#  path '/tmp/Dockerfile'
+#  source 'gem-cache/Dockerfile'
+#end
 
 docker_image 'ubuntu' do
   tag 'gem-cache'

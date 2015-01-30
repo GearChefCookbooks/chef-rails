@@ -6,9 +6,9 @@
 
 include_recipe 'docker'
 
-remote_directory '/tmp/postgres' do
-  source 'postgres'
-end
+#remote_directory '/tmp/postgres' do
+#  source 'postgres'
+#end
 
 docker_image 'austenito/postgres' do
   source '/tmp/postgres'

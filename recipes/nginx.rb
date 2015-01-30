@@ -5,9 +5,9 @@
 
 include_recipe 'docker'
 
-remote_directory '/tmp/nginx' do
-  source 'nginx'
-end
+#remote_directory '/tmp/nginx' do
+#  source 'nginx'
+#end
 
 docker_image 'austenito' do
   source '/tmp/nginx'
