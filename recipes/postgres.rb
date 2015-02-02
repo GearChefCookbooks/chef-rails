@@ -11,6 +11,8 @@
 #end
 
 docker_image 'austenito/postgres' do
+  retries 0
+  retry_delay 2
   source '/tmp/postgres'
   tag '9.3'
   action :build_if_missing

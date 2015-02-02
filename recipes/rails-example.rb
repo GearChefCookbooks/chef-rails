@@ -10,6 +10,8 @@
 #end
 
 docker_image 'austenito/rails-example' do
+  retries 0
+  retry_delay 2
   source '/tmp/rails-example'
   action :build_if_missing
   cmd_timeout 900

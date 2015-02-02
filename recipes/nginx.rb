@@ -10,6 +10,8 @@
 #end
 
 docker_image 'austenito' do
+  retries 0
+  retry_delay 2
   source '/tmp/nginx'
   tag 'nginx'
   action :build_if_missing
